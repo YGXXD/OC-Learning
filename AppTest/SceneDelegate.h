@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  AppTest
+//
+//  Created by chenqiudu on 2023/7/10.
+//
+
+#import <UIKit/UIKit.h>
+
+
+@interface MySceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
