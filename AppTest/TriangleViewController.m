@@ -19,8 +19,7 @@
     id<MTLBuffer> colorBuffer;
     id<MTLBuffer> transformBuffer; // viewport offset
     CGRect xViewportDrawable;
-    CGRect xViewportScreen;
-    CGFloat xDrawbleToScreenVecScale;
+    simd_float2 xDrawbleToScreenVecScale;
     
     simd_float2 touchScreenPoint;
     simd_float2 deltaScreenPoint;
@@ -47,11 +46,8 @@
     xViewportDrawable.origin.y = xView.drawableSize.height / 4;
     xViewportDrawable.size.width = xView.drawableSize.width;
     xViewportDrawable.size.height = xView.drawableSize.height / 2;
-    xDrawbleToScreenVecScale = xView.bounds.size.height / xView.drawableSize.height;
-    xViewportScreen.origin.x = 0;
-    xViewportScreen.origin.y = xViewportDrawable.origin.y * xDrawbleToScreenVecScale;
-    xViewportScreen.size.width = xViewportDrawable.size.width * xDrawbleToScreenVecScale;
-    xViewportScreen.size.height = xViewportDrawable.size.height * xDrawbleToScreenVecScale;
+    xDrawbleToScreenVecScale.x = xView.bounds.size.width / xView.drawableSize.width;
+    xDrawbleToScreenVecScale.y = xView.bounds.size.height / xView.drawableSize.height;
     
     // build vertex buffer
     simd_float3 positions[3] =
@@ -136,8 +132,10 @@
         deltaScreenPoint += touchScreenPoint - currScreenPoint;
         touchScreenPoint = currScreenPoint;
         
+        simd_float2 transformOffset = deltaScreenPoint / ((simd_float2){-xViewportDrawable.size.width, xViewportDrawable.size.height} * xDrawbleToScreenVecScale);
+        
         simd_float2* deltaViewportPoint = (simd_float2*)transformBuffer.contents;
-        *deltaViewportPoint = deltaScreenPoint / (simd_float2){-xViewportScreen.size.width, xViewportScreen.size.height};
+        *deltaViewportPoint = transformOffset;
         
 //        NSLog(@"touchScreenPoint: %f, %f", touchScreenPoint[0], touchScreenPoint[1]);
 //        NSLog(@"deltaScreenPoint: %f, %f", deltaScreenPoint[0], deltaScreenPoint[1]);
