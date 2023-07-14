@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C2625222A5D52020055C757 /* BoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2625212A5D52020055C757 /* BoxViewController.m */; };
+		6C6355DA2A60E45E001F0D10 /* libXXdMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6355D92A60E45E001F0D10 /* libXXdMath.a */; };
 		6CC33CF72A5BB95200F08869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF62A5BB95200F08869 /* AppDelegate.m */; };
 		6CC33CFA2A5BB95200F08869 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF92A5BB95200F08869 /* SceneDelegate.m */; };
 		6CC33CFD2A5BB95200F08869 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CFC2A5BB95200F08869 /* MainViewController.m */; };
@@ -16,13 +17,14 @@
 		6CC33D102A5BCEE400F08869 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D0F2A5BCEE400F08869 /* MainView.m */; };
 		6CC33D162A5BED4700F08869 /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D152A5BED4700F08869 /* TriangleViewController.m */; };
 		6CC33D192A5C1D0100F08869 /* XXdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D182A5C1D0100F08869 /* XXdView.m */; };
-		6CC33D1B2A5C2A8500F08869 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D1A2A5C2A8500F08869 /* Shader.metal */; };
+		6CC33D1B2A5C2A8500F08869 /* MetalShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D1A2A5C2A8500F08869 /* MetalShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C2625202A5D52020055C757 /* BoxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxViewController.h; sourceTree = "<group>"; };
 		6C2625212A5D52020055C757 /* BoxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxViewController.m; sourceTree = "<group>"; };
-		6C2625232A5D565A0055C757 /* XXdMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXdMath.h; sourceTree = "<group>"; };
+		6C6355D82A60E454001F0D10 /* XXdMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdMath.h; sourceTree = "<group>"; };
+		6C6355D92A60E45E001F0D10 /* libXXdMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXXdMath.a; sourceTree = "<group>"; };
 		6CC33CF22A5BB95200F08869 /* AppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC33CF52A5BB95200F08869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CC33CF62A5BB95200F08869 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 		6CC33D152A5BED4700F08869 /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
 		6CC33D172A5C1D0100F08869 /* XXdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXdView.h; sourceTree = "<group>"; };
 		6CC33D182A5C1D0100F08869 /* XXdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXdView.m; sourceTree = "<group>"; };
-		6CC33D1A2A5C2A8500F08869 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		6CC33D1A2A5C2A8500F08869 /* MetalShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,16 +49,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6355DA2A60E45E001F0D10 /* libXXdMath.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C6355CF2A60E1BE001F0D10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CC33D0E2A5BCEE400F08869 /* MainView.h */,
+				6CC33D0F2A5BCEE400F08869 /* MainView.m */,
+				6CC33D172A5C1D0100F08869 /* XXdView.h */,
+				6CC33D182A5C1D0100F08869 /* XXdView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C6355D02A60E1D1001F0D10 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CC33CFB2A5BB95200F08869 /* MainViewController.h */,
+				6CC33CFC2A5BB95200F08869 /* MainViewController.m */,
+				6CC33D142A5BED4700F08869 /* TriangleViewController.h */,
+				6CC33D152A5BED4700F08869 /* TriangleViewController.m */,
+				6C2625202A5D52020055C757 /* BoxViewController.h */,
+				6C2625212A5D52020055C757 /* BoxViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6C6355D12A60E24B001F0D10 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				6CC33D1A2A5C2A8500F08869 /* MetalShader.metal */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		6C6355D22A60E2E5001F0D10 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6CC33D012A5BB95300F08869 /* Assets.xcassets */,
+				6CC33D062A5BB95300F08869 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C6355D32A60E354001F0D10 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6C6355D72A60E42E001F0D10 /* Binary */,
+				6C6355D52A60E3BF001F0D10 /* XXdMath */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		6C6355D42A60E39E001F0D10 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6CC33CF52A5BB95200F08869 /* AppDelegate.h */,
+				6CC33CF62A5BB95200F08869 /* AppDelegate.m */,
+				6CC33CF82A5BB95200F08869 /* SceneDelegate.h */,
+				6CC33CF92A5BB95200F08869 /* SceneDelegate.m */,
+				6CC33D072A5BB95300F08869 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C6355D52A60E3BF001F0D10 /* XXdMath */ = {
+			isa = PBXGroup;
+			children = (
+				6C6355D82A60E454001F0D10 /* XXdMath.h */,
+			);
+			path = XXdMath;
+			sourceTree = "<group>";
+		};
+		6C6355D72A60E42E001F0D10 /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				6C6355D92A60E45E001F0D10 /* libXXdMath.a */,
+			);
+			path = Binary;
+			sourceTree = "<group>";
+		};
 		6CC33CE92A5BB95200F08869 = {
 			isa = PBXGroup;
 			children = (
-				6CC33CF42A5BB95200F08869 /* AppTest */,
+				6C6355D32A60E354001F0D10 /* Library */,
+				6C6355D22A60E2E5001F0D10 /* Config */,
+				6C6355D12A60E24B001F0D10 /* Shader */,
+				6CC33CF42A5BB95200F08869 /* AppCore */,
 				6CC33CF32A5BB95200F08869 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,30 +153,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CC33CF42A5BB95200F08869 /* AppTest */ = {
+		6CC33CF42A5BB95200F08869 /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
-				6CC33CF52A5BB95200F08869 /* AppDelegate.h */,
-				6CC33CF62A5BB95200F08869 /* AppDelegate.m */,
-				6CC33CF82A5BB95200F08869 /* SceneDelegate.h */,
-				6CC33CF92A5BB95200F08869 /* SceneDelegate.m */,
-				6CC33CFB2A5BB95200F08869 /* MainViewController.h */,
-				6CC33CFC2A5BB95200F08869 /* MainViewController.m */,
-				6CC33D142A5BED4700F08869 /* TriangleViewController.h */,
-				6CC33D152A5BED4700F08869 /* TriangleViewController.m */,
-				6C2625202A5D52020055C757 /* BoxViewController.h */,
-				6C2625212A5D52020055C757 /* BoxViewController.m */,
-				6CC33D012A5BB95300F08869 /* Assets.xcassets */,
-				6CC33D062A5BB95300F08869 /* Info.plist */,
-				6CC33D072A5BB95300F08869 /* main.m */,
-				6CC33D0E2A5BCEE400F08869 /* MainView.h */,
-				6CC33D0F2A5BCEE400F08869 /* MainView.m */,
-				6CC33D172A5C1D0100F08869 /* XXdView.h */,
-				6CC33D182A5C1D0100F08869 /* XXdView.m */,
-				6C2625232A5D565A0055C757 /* XXdMath.h */,
-				6CC33D1A2A5C2A8500F08869 /* Shader.metal */,
+				6C6355D02A60E1D1001F0D10 /* ViewController */,
+				6C6355CF2A60E1BE001F0D10 /* View */,
+				6C6355D42A60E39E001F0D10 /* Main */,
 			);
-			path = AppTest;
+			path = AppCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +235,7 @@
 				6CC33D162A5BED4700F08869 /* TriangleViewController.m in Sources */,
 				6CC33CFD2A5BB95200F08869 /* MainViewController.m in Sources */,
 				6CC33CF72A5BB95200F08869 /* AppDelegate.m in Sources */,
-				6CC33D1B2A5C2A8500F08869 /* Shader.metal in Sources */,
+				6CC33D1B2A5C2A8500F08869 /* MetalShader.metal in Sources */,
 				6C2625222A5D52020055C757 /* BoxViewController.m in Sources */,
 				6CC33D192A5C1D0100F08869 /* XXdView.m in Sources */,
 				6CC33D082A5BB95300F08869 /* main.m in Sources */,
@@ -297,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TGQL2R84B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppTest/Info.plist;
+				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -307,6 +375,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Binary",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XCodeProj.AppTest;
@@ -325,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TGQL2R84B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppTest/Info.plist;
+				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -335,6 +407,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Binary",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XCodeProj.AppTest;
