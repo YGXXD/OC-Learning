@@ -98,7 +98,7 @@
     id<MTLRenderCommandEncoder> pEnc = [pCmd renderCommandEncoderWithDescriptor:pRpd];
     
     [pEnc setViewport:(MTLViewport){xViewportDrawable.origin.x, xViewportDrawable.origin.y, xViewportDrawable.size.width, xViewportDrawable.size.height, -1, 1}];
-    [pEnc setScissorRect:(MTLScissorRect){xViewportDrawable.origin.x, xViewportDrawable.origin.y, xViewportDrawable.size.width, xViewportDrawable.size.height}];
+    [pEnc setScissorRect:(MTLScissorRect){static_cast<NSUInteger>((xViewportDrawable.origin.x)), static_cast<NSUInteger>((xViewportDrawable.origin.y)), static_cast<NSUInteger>((xViewportDrawable.size.width)), static_cast<NSUInteger>((xViewportDrawable.size.height))}];
     [pEnc setCullMode:MTLCullModeBack];
     [pEnc setFrontFacingWinding:MTLWindingCounterClockwise];
     [pEnc setRenderPipelineState:xPSO];
@@ -120,7 +120,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     if(touches.count){
         CGPoint point = [[touches allObjects][0] locationInView:self.view];
-        touchScreenPoint = (simd_float2){point.x, point.y};
+        touchScreenPoint = (simd_float2){static_cast<float>((point.x)), static_cast<float>((point.y))};
     }
 }
 
@@ -128,11 +128,11 @@
     if(touches.count){
         CGPoint point = [[touches allObjects][0] locationInView:self.view];
         
-        simd_float2 currScreenPoint = (simd_float2){point.x, point.y};
+        simd_float2 currScreenPoint = (simd_float2){static_cast<float>((point.x)), static_cast<float>((point.y))};
         deltaScreenPoint += touchScreenPoint - currScreenPoint;
         touchScreenPoint = currScreenPoint;
         
-        simd_float2 transformOffset = deltaScreenPoint / ((simd_float2){-xViewportDrawable.size.width, xViewportDrawable.size.height} * xDrawbleToScreenVecScale);
+        simd_float2 transformOffset = deltaScreenPoint / ((simd_float2){static_cast<float>(-(xViewportDrawable.size.width)), static_cast<float>((xViewportDrawable.size.height))} * xDrawbleToScreenVecScale);
         
         simd_float2* deltaViewportPoint = (simd_float2*)transformBuffer.contents;
         *deltaViewportPoint = transformOffset;

@@ -94,8 +94,8 @@
     
     // build camera buffer
     simd_float3 eyePos = { raduis * sinf(phi) * cosf(theta), raduis * sinf(phi) * sinf(theta), raduis * cosf(phi) };
-    simd_float4x4 perspMat = xxdMakePerspective(M_PI * 0.25, aspect, 3, 10000);
-    simd_float4x4 viewMat = xxdMakeViewLookAt(eyePos, (simd_float3){0, 0, 0}, (simd_float3){0, 0, 1});
+    simd_float4x4 perspMat = xxd::makePerspective(M_PI * 0.25, aspect, 3, 10000);
+    simd_float4x4 viewMat = xxd::makeViewLookAt(eyePos, (simd_float3){0, 0, 0}, (simd_float3){0, 0, 1});
     simd_float4x4 cameraMat = simd_mul(viewMat, perspMat); // 变换投影矩阵
 
     NSInteger cameraBufferSiaze = sizeof(simd_float4x4);
@@ -170,7 +170,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     if(touches.count){
         CGPoint point = [[touches allObjects][0] locationInView:self.view];
-        touchScreenPoint = (simd_float2){point.x, point.y};
+        touchScreenPoint = (simd_float2){static_cast<float>(point.x), static_cast<float>((point.y))};
     }
 }
 
@@ -178,15 +178,15 @@
     if(touches.count){
         CGPoint point = [[touches allObjects][0] locationInView:self.view];
         
-        simd_float2 currScreenPoint = (simd_float2){point.x, point.y};
+        simd_float2 currScreenPoint = (simd_float2){static_cast<float>(point.x), static_cast<float>((point.y))};
         theta += -(touchScreenPoint.x - currScreenPoint.x) / 500;
         phi += (touchScreenPoint.y - currScreenPoint.y) / 500;
         phi = simd_clamp(phi, 0.01f, (float)M_PI - 0.01f);
         touchScreenPoint = currScreenPoint;
         
         simd_float3 eyePos = { raduis * sinf(phi) * cosf(theta), raduis * sinf(phi) * sinf(theta), raduis * cosf(phi) };
-        simd_float4x4 perspMat = xxdMakePerspective(M_PI * 0.25, aspect, 3, 10000);
-        simd_float4x4 viewMat = xxdMakeViewLookAt(eyePos, (simd_float3){0, 0, 0}, (simd_float3){0, 0, 1});
+        simd_float4x4 perspMat = xxd::makePerspective(M_PI * 0.25, aspect, 3, 10000);
+        simd_float4x4 viewMat = xxd::makeViewLookAt(eyePos, (simd_float3){0, 0, 0}, (simd_float3){0, 0, 1});
         simd_float4x4 cameraMat = simd_mul(viewMat, perspMat); // 变换投影矩阵
         
         simd_float4x4* cameraMatPtr = (simd_float4x4*)cameraBuffer.contents;

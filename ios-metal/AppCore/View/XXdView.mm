@@ -19,11 +19,11 @@
         
         CGFloat centerX = [UIScreen mainScreen].bounds.size.width / 2;
         CGFloat buttomY = [UIScreen mainScreen].bounds.size.height;
-        
+
         titleText = [[UILabel alloc] initWithFrame:CGRectMake(centerX - 150, buttomY - 100, 300, 100)];
         titleText.font = [UIFont systemFontOfSize:20];
         titleText.textAlignment = NSTextAlignmentCenter;
-        
+
         [self addSubview:titleText];
     }
     

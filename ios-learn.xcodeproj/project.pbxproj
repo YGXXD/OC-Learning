@@ -7,49 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C2625222A5D52020055C757 /* BoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2625212A5D52020055C757 /* BoxViewController.m */; };
-		6C6355DA2A60E45E001F0D10 /* libXXdMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6355D92A60E45E001F0D10 /* libXXdMath.a */; };
-		6CC33CF72A5BB95200F08869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF62A5BB95200F08869 /* AppDelegate.m */; };
-		6CC33CFA2A5BB95200F08869 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF92A5BB95200F08869 /* SceneDelegate.m */; };
-		6CC33CFD2A5BB95200F08869 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CFC2A5BB95200F08869 /* MainViewController.m */; };
+		6C2625222A5D52020055C757 /* BoxViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C2625212A5D52020055C757 /* BoxViewController.mm */; };
+		6C82D1F22A653412006E5F8C /* XXdMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C82D1E72A653253006E5F8C /* XXdMath.h */; };
+		6C82D1FB2A6535FF006E5F8C /* XXdMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C82D1F92A6535FF006E5F8C /* XXdMath.cpp */; };
+		6C82D20C2A6545F9006E5F8C /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82D2062A653AB8006E5F8C /* Metal.framework */; };
+		6C82D20D2A6545F9006E5F8C /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82D2002A653A64006E5F8C /* MetalKit.framework */; };
+		6C82D20E2A654600006E5F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82D2042A653AAA006E5F8C /* UIKit.framework */; platformFilter = ios; };
+		6C82D20F2A6547B3006E5F8C /* libxxd-math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82D1E12A653184006E5F8C /* libxxd-math.a */; };
+		6CC33CF72A5BB95200F08869 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF62A5BB95200F08869 /* AppDelegate.mm */; };
+		6CC33CFA2A5BB95200F08869 /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CF92A5BB95200F08869 /* SceneDelegate.mm */; };
+		6CC33CFD2A5BB95200F08869 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33CFC2A5BB95200F08869 /* MainViewController.mm */; };
 		6CC33D022A5BB95300F08869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CC33D012A5BB95300F08869 /* Assets.xcassets */; };
-		6CC33D082A5BB95300F08869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D072A5BB95300F08869 /* main.m */; };
-		6CC33D102A5BCEE400F08869 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D0F2A5BCEE400F08869 /* MainView.m */; };
-		6CC33D162A5BED4700F08869 /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D152A5BED4700F08869 /* TriangleViewController.m */; };
-		6CC33D192A5C1D0100F08869 /* XXdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D182A5C1D0100F08869 /* XXdView.m */; };
+		6CC33D082A5BB95300F08869 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D072A5BB95300F08869 /* main.mm */; };
+		6CC33D102A5BCEE400F08869 /* MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D0F2A5BCEE400F08869 /* MainView.mm */; };
+		6CC33D162A5BED4700F08869 /* TriangleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D152A5BED4700F08869 /* TriangleViewController.mm */; };
+		6CC33D192A5C1D0100F08869 /* XXdView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D182A5C1D0100F08869 /* XXdView.mm */; };
 		6CC33D1B2A5C2A8500F08869 /* MetalShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CC33D1A2A5C2A8500F08869 /* MetalShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C2625202A5D52020055C757 /* BoxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxViewController.h; sourceTree = "<group>"; };
-		6C2625212A5D52020055C757 /* BoxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxViewController.m; sourceTree = "<group>"; };
-		6C6355D82A60E454001F0D10 /* XXdMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdMath.h; sourceTree = "<group>"; };
-		6C6355D92A60E45E001F0D10 /* libXXdMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXXdMath.a; sourceTree = "<group>"; };
-		6CC33CF22A5BB95200F08869 /* AppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2625212A5D52020055C757 /* BoxViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BoxViewController.mm; sourceTree = "<group>"; };
+		6C82D1E12A653184006E5F8C /* libxxd-math.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libxxd-math.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C82D1E72A653253006E5F8C /* XXdMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdMath.h; sourceTree = "<group>"; };
+		6C82D1F92A6535FF006E5F8C /* XXdMath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XXdMath.cpp; sourceTree = "<group>"; };
+		6C82D2002A653A64006E5F8C /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		6C82D2042A653AAA006E5F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6C82D2062A653AB8006E5F8C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		6CC33CF22A5BB95200F08869 /* ios-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC33CF52A5BB95200F08869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6CC33CF62A5BB95200F08869 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CC33CF62A5BB95200F08869 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		6CC33CF82A5BB95200F08869 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		6CC33CF92A5BB95200F08869 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		6CC33CF92A5BB95200F08869 /* SceneDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneDelegate.mm; sourceTree = "<group>"; };
 		6CC33CFB2A5BB95200F08869 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		6CC33CFC2A5BB95200F08869 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6CC33CFC2A5BB95200F08869 /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		6CC33D012A5BB95300F08869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CC33D062A5BB95300F08869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CC33D072A5BB95300F08869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CC33D072A5BB95300F08869 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		6CC33D0E2A5BCEE400F08869 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		6CC33D0F2A5BCEE400F08869 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		6CC33D0F2A5BCEE400F08869 /* MainView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainView.mm; sourceTree = "<group>"; };
 		6CC33D142A5BED4700F08869 /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
-		6CC33D152A5BED4700F08869 /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		6CC33D152A5BED4700F08869 /* TriangleViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleViewController.mm; sourceTree = "<group>"; };
 		6CC33D172A5C1D0100F08869 /* XXdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXdView.h; sourceTree = "<group>"; };
-		6CC33D182A5C1D0100F08869 /* XXdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXdView.m; sourceTree = "<group>"; };
+		6CC33D182A5C1D0100F08869 /* XXdView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = XXdView.mm; sourceTree = "<group>"; };
 		6CC33D1A2A5C2A8500F08869 /* MetalShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C82D1DF2A653184006E5F8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CC33CEF2A5BB95200F08869 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6355DA2A60E45E001F0D10 /* libXXdMath.a in Frameworks */,
+				6C82D20F2A6547B3006E5F8C /* libxxd-math.a in Frameworks */,
+				6C82D20E2A654600006E5F8C /* UIKit.framework in Frameworks */,
+				6C82D20C2A6545F9006E5F8C /* Metal.framework in Frameworks */,
+				6C82D20D2A6545F9006E5F8C /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				6CC33D0E2A5BCEE400F08869 /* MainView.h */,
-				6CC33D0F2A5BCEE400F08869 /* MainView.m */,
+				6CC33D0F2A5BCEE400F08869 /* MainView.mm */,
 				6CC33D172A5C1D0100F08869 /* XXdView.h */,
-				6CC33D182A5C1D0100F08869 /* XXdView.m */,
+				6CC33D182A5C1D0100F08869 /* XXdView.mm */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -71,11 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				6CC33CFB2A5BB95200F08869 /* MainViewController.h */,
-				6CC33CFC2A5BB95200F08869 /* MainViewController.m */,
+				6CC33CFC2A5BB95200F08869 /* MainViewController.mm */,
 				6CC33D142A5BED4700F08869 /* TriangleViewController.h */,
-				6CC33D152A5BED4700F08869 /* TriangleViewController.m */,
+				6CC33D152A5BED4700F08869 /* TriangleViewController.mm */,
 				6C2625202A5D52020055C757 /* BoxViewController.h */,
-				6C2625212A5D52020055C757 /* BoxViewController.m */,
+				6C2625212A5D52020055C757 /* BoxViewController.mm */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -97,58 +116,62 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		6C6355D32A60E354001F0D10 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				6C6355D72A60E42E001F0D10 /* Binary */,
-				6C6355D52A60E3BF001F0D10 /* XXdMath */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
 		6C6355D42A60E39E001F0D10 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				6CC33CF52A5BB95200F08869 /* AppDelegate.h */,
-				6CC33CF62A5BB95200F08869 /* AppDelegate.m */,
+				6CC33CF62A5BB95200F08869 /* AppDelegate.mm */,
 				6CC33CF82A5BB95200F08869 /* SceneDelegate.h */,
-				6CC33CF92A5BB95200F08869 /* SceneDelegate.m */,
-				6CC33D072A5BB95300F08869 /* main.m */,
+				6CC33CF92A5BB95200F08869 /* SceneDelegate.mm */,
+				6CC33D072A5BB95300F08869 /* main.mm */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		6C6355D52A60E3BF001F0D10 /* XXdMath */ = {
+		6C82D1E52A65318C006E5F8C /* ios-metal */ = {
 			isa = PBXGroup;
 			children = (
-				6C6355D82A60E454001F0D10 /* XXdMath.h */,
+				6CC33CF42A5BB95200F08869 /* AppCore */,
+				6C6355D22A60E2E5001F0D10 /* Config */,
+				6C6355D12A60E24B001F0D10 /* Shader */,
 			);
-			path = XXdMath;
+			path = "ios-metal";
 			sourceTree = "<group>";
 		};
-		6C6355D72A60E42E001F0D10 /* Binary */ = {
+		6C82D1E62A65320E006E5F8C /* xxd-math */ = {
 			isa = PBXGroup;
 			children = (
-				6C6355D92A60E45E001F0D10 /* libXXdMath.a */,
+				6C82D1E72A653253006E5F8C /* XXdMath.h */,
+				6C82D1F92A6535FF006E5F8C /* XXdMath.cpp */,
 			);
-			path = Binary;
+			path = "xxd-math";
+			sourceTree = "<group>";
+		};
+		6C82D1FD2A653A53006E5F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C82D2062A653AB8006E5F8C /* Metal.framework */,
+				6C82D2042A653AAA006E5F8C /* UIKit.framework */,
+				6C82D2002A653A64006E5F8C /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6CC33CE92A5BB95200F08869 = {
 			isa = PBXGroup;
 			children = (
-				6C6355D32A60E354001F0D10 /* Library */,
-				6C6355D22A60E2E5001F0D10 /* Config */,
-				6C6355D12A60E24B001F0D10 /* Shader */,
-				6CC33CF42A5BB95200F08869 /* AppCore */,
+				6C82D1E62A65320E006E5F8C /* xxd-math */,
+				6C82D1E52A65318C006E5F8C /* ios-metal */,
 				6CC33CF32A5BB95200F08869 /* Products */,
+				6C82D1FD2A653A53006E5F8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6CC33CF32A5BB95200F08869 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CC33CF22A5BB95200F08869 /* AppTest.app */,
+				6CC33CF22A5BB95200F08869 /* ios-metal.app */,
+				6C82D1E12A653184006E5F8C /* libxxd-math.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,10 +188,38 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6C82D1DD2A653184006E5F8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C82D1F22A653412006E5F8C /* XXdMath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		6CC33CF12A5BB95200F08869 /* AppTest */ = {
+		6C82D1E02A653184006E5F8C /* xxd-math */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CC33D0B2A5BB95300F08869 /* Build configuration list for PBXNativeTarget "AppTest" */;
+			buildConfigurationList = 6C82D1E22A653184006E5F8C /* Build configuration list for PBXNativeTarget "xxd-math" */;
+			buildPhases = (
+				6C82D1DD2A653184006E5F8C /* Headers */,
+				6C82D1DE2A653184006E5F8C /* Sources */,
+				6C82D1DF2A653184006E5F8C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xxd-math";
+			productName = "xxd-math";
+			productReference = 6C82D1E12A653184006E5F8C /* libxxd-math.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6CC33CF12A5BB95200F08869 /* ios-metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC33D0B2A5BB95300F08869 /* Build configuration list for PBXNativeTarget "ios-metal" */;
 			buildPhases = (
 				6CC33CEE2A5BB95200F08869 /* Sources */,
 				6CC33CEF2A5BB95200F08869 /* Frameworks */,
@@ -178,9 +229,9 @@
 			);
 			dependencies = (
 			);
-			name = AppTest;
+			name = "ios-metal";
 			productName = AppTest;
-			productReference = 6CC33CF22A5BB95200F08869 /* AppTest.app */;
+			productReference = 6CC33CF22A5BB95200F08869 /* ios-metal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,12 +243,15 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					6C82D1E02A653184006E5F8C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					6CC33CF12A5BB95200F08869 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 6CC33CED2A5BB95200F08869 /* Build configuration list for PBXProject "AppTest" */;
+			buildConfigurationList = 6CC33CED2A5BB95200F08869 /* Build configuration list for PBXProject "ios-learn" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -210,7 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CC33CF12A5BB95200F08869 /* AppTest */,
+				6CC33CF12A5BB95200F08869 /* ios-metal */,
+				6C82D1E02A653184006E5F8C /* xxd-math */,
 			);
 		};
 /* End PBXProject section */
@@ -227,25 +282,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C82D1DE2A653184006E5F8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C82D1FB2A6535FF006E5F8C /* XXdMath.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CC33CEE2A5BB95200F08869 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CC33D102A5BCEE400F08869 /* MainView.m in Sources */,
-				6CC33D162A5BED4700F08869 /* TriangleViewController.m in Sources */,
-				6CC33CFD2A5BB95200F08869 /* MainViewController.m in Sources */,
-				6CC33CF72A5BB95200F08869 /* AppDelegate.m in Sources */,
+				6CC33D102A5BCEE400F08869 /* MainView.mm in Sources */,
+				6CC33D162A5BED4700F08869 /* TriangleViewController.mm in Sources */,
+				6CC33CFD2A5BB95200F08869 /* MainViewController.mm in Sources */,
+				6CC33CF72A5BB95200F08869 /* AppDelegate.mm in Sources */,
 				6CC33D1B2A5C2A8500F08869 /* MetalShader.metal in Sources */,
-				6C2625222A5D52020055C757 /* BoxViewController.m in Sources */,
-				6CC33D192A5C1D0100F08869 /* XXdView.m in Sources */,
-				6CC33D082A5BB95300F08869 /* main.m in Sources */,
-				6CC33CFA2A5BB95200F08869 /* SceneDelegate.m in Sources */,
+				6C2625222A5D52020055C757 /* BoxViewController.mm in Sources */,
+				6CC33D192A5C1D0100F08869 /* XXdView.mm in Sources */,
+				6CC33D082A5BB95300F08869 /* main.mm in Sources */,
+				6CC33CFA2A5BB95200F08869 /* SceneDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6C82D1E32A653184006E5F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TGQL2R84B;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		6C82D1E42A653184006E5F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TGQL2R84B;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
 		6CC33D092A5BB95300F08869 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,7 +456,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TGQL2R84B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_FILE = "ios-metal/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -376,14 +467,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Binary",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XCodeProj.AppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				TAPI_LANGUAGE = "objective-c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,7 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TGQL2R84B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_FILE = "ios-metal/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -408,14 +499,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Binary",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = XCodeProj.AppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				TAPI_LANGUAGE = "objective-c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -423,7 +514,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CC33CED2A5BB95200F08869 /* Build configuration list for PBXProject "AppTest" */ = {
+		6C82D1E22A653184006E5F8C /* Build configuration list for PBXNativeTarget "xxd-math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C82D1E32A653184006E5F8C /* Debug */,
+				6C82D1E42A653184006E5F8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CC33CED2A5BB95200F08869 /* Build configuration list for PBXProject "ios-learn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CC33D092A5BB95300F08869 /* Debug */,
@@ -432,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CC33D0B2A5BB95300F08869 /* Build configuration list for PBXNativeTarget "AppTest" */ = {
+		6CC33D0B2A5BB95300F08869 /* Build configuration list for PBXNativeTarget "ios-metal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CC33D0C2A5BB95300F08869 /* Debug */,
