@@ -1,5 +1,5 @@
 //
-//  XXdMath.c
+//  XXdMath.cpp
 //  XXdMath
 //
 //  Created by chenqiudu on 2023/7/12.
