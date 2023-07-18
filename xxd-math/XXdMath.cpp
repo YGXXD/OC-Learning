@@ -39,8 +39,8 @@ simd_float4x4 XXd::MakeIdentity()
 
 simd_float4x4 XXd::MakeViewLookAt(const simd_float3& eyePos, const simd_float3& focusPos, const simd_float3& up)
 {
-    simd_float3 z = normalize(focusPos - eyePos);
-    simd_float3 x = normalize(simd_cross(up, z));
+    simd_float3 z = Normalize(focusPos - eyePos);
+    simd_float3 x = Normalize(simd_cross(up, z));
     simd_float3 y = simd_cross(z, x);
     float wx = -simd_dot(eyePos, x);
     float wy = -simd_dot(eyePos, y);
