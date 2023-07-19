@@ -144,10 +144,10 @@
 		6C82D3432A663828006E5F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C82D3462A6639A2006E5F8C /* MetalSupport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetalSupport.cpp; sourceTree = "<group>"; };
 		6C82D3482A663A55006E5F8C /* MetalContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetalContext.cpp; sourceTree = "<group>"; };
-		6C82D3492A663A55006E5F8C /* MetalContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalContext.hpp; sourceTree = "<group>"; };
+		6C82D3492A663A55006E5F8C /* MetalContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalContext.h; sourceTree = "<group>"; };
 		6C82D3A12A6657A2006E5F8C /* libmetal-support.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmetal-support.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C82D3BB2A6663A0006E5F8C /* MetalGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetalGeometry.cpp; sourceTree = "<group>"; };
-		6C82D3BC2A6663A0006E5F8C /* MetalGeometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalGeometry.hpp; sourceTree = "<group>"; };
+		6C82D3BC2A6663A0006E5F8C /* MetalGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalGeometry.h; sourceTree = "<group>"; };
 		6C82D3BE2A66711D006E5F8C /* RenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
 		6C82D3BF2A66711D006E5F8C /* RenderView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderView.mm; sourceTree = "<group>"; };
 		6C82D3C12A66715C006E5F8C /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
@@ -155,9 +155,9 @@
 		6C82D3C92A667259006E5F8C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		6C82D3CC2A667274006E5F8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6C82D3D12A66741F006E5F8C /* MetalCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetalCamera.cpp; sourceTree = "<group>"; };
-		6C82D3D22A66741F006E5F8C /* MetalCamera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalCamera.hpp; sourceTree = "<group>"; };
+		6C82D3D22A66741F006E5F8C /* MetalCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalCamera.h; sourceTree = "<group>"; };
 		6C82D3D42A667987006E5F8C /* MetalRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MetalRender.cpp; sourceTree = "<group>"; };
-		6C82D3D52A667987006E5F8C /* MetalRender.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalRender.hpp; sourceTree = "<group>"; };
+		6C82D3D52A667987006E5F8C /* MetalRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRender.h; sourceTree = "<group>"; };
 		6C9F24882A667A7C00C8AB91 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
 		6C9F248A2A66AE4C00C8AB91 /* BoxShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BoxShader.metal; sourceTree = "<group>"; };
 		6C9F249D2A66B5C500C8AB91 /* metal-shader.metallib */ = {isa = PBXFileReference; explicitFileType = "archive.metal-library"; includeInIndex = 0; path = "metal-shader.metallib"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,13 +382,13 @@
 			children = (
 				6C82D3462A6639A2006E5F8C /* MetalSupport.cpp */,
 				6C82D3482A663A55006E5F8C /* MetalContext.cpp */,
-				6C82D3492A663A55006E5F8C /* MetalContext.hpp */,
+				6C82D3492A663A55006E5F8C /* MetalContext.h */,
 				6C82D3BB2A6663A0006E5F8C /* MetalGeometry.cpp */,
-				6C82D3BC2A6663A0006E5F8C /* MetalGeometry.hpp */,
+				6C82D3BC2A6663A0006E5F8C /* MetalGeometry.h */,
 				6C82D3D12A66741F006E5F8C /* MetalCamera.cpp */,
-				6C82D3D22A66741F006E5F8C /* MetalCamera.hpp */,
+				6C82D3D22A66741F006E5F8C /* MetalCamera.h */,
 				6C82D3D42A667987006E5F8C /* MetalRender.cpp */,
-				6C82D3D52A667987006E5F8C /* MetalRender.hpp */,
+				6C82D3D52A667987006E5F8C /* MetalRender.h */,
 				6C9F24882A667A7C00C8AB91 /* Singleton.hpp */,
 			);
 			path = "metal-support";

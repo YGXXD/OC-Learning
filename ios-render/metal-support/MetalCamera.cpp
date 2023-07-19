@@ -5,7 +5,7 @@
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#include "MetalCamera.hpp"
+#include "MetalCamera.h"
 
 xxd::Camera::Camera(float asp) : aspect(asp)
 {

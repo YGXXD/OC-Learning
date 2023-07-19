@@ -1,14 +1,14 @@
 //
-//  MetalCamera.hpp
+//  MetalCamera.h
 //  metal-support
 //
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#ifndef MetalCamera_hpp
-#define MetalCamera_hpp
+#ifndef MetalCamera_h
+#define MetalCamera_h
 
-#include "MetalGeometry.hpp"
+#include "MetalGeometry.h"
 
 namespace xxd
 {
@@ -35,4 +35,4 @@ public:
 
 };
 
-#endif /* MetalCamera_hpp */
+#endif /* MetalCamera_h */

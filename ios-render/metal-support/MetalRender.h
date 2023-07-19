@@ -1,12 +1,12 @@
 //
-//  MetalRender.hpp
+//  MetalRender.h
 //  metal-support
 //
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#ifndef MetalRender_hpp
-#define MetalRender_hpp
+#ifndef MetalRender_h
+#define MetalRender_h
 
 #include "QuartzCore/QuartzCore.hpp"
 
@@ -25,4 +25,4 @@ private:
 
 };
 
-#endif /* MetalRender_hpp */
+#endif /* MetalRender_h */

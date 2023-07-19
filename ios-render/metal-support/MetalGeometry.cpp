@@ -5,7 +5,7 @@
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#include "MetalGeometry.hpp"
+#include "MetalGeometry.h"
 
 float xxd::InvSqrt(float x)
 {

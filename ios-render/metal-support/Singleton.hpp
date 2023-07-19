@@ -1,12 +1,12 @@
 //
-//  Singleton.h
+//  Singleton.hpp
 //  ios-render
 //
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#ifndef Singleton_h
-#define Singleton_h
+#ifndef Singleton_hpp
+#define Singleton_hpp
 
 namespace xxd
 {
@@ -48,4 +48,4 @@ inline T& Singleton<T>::Get()
 };
 
 
-#endif /* Singleton_h */
+#endif /* Singleton_hpp */

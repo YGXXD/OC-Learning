@@ -1,12 +1,12 @@
 //
-//  MetalContext.hpp
+//  MetalContext.h
 //  metal-support
 //
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#ifndef MetalContext_hpp
-#define MetalContext_hpp
+#ifndef MetalContext_h
+#define MetalContext_h
 
 #include <string>
 #include <simd/simd.h>
@@ -54,4 +54,4 @@ private:
 
 };
 
-#endif /* MetalContext_hpp */
+#endif /* MetalContext_h */

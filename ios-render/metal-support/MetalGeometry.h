@@ -1,12 +1,12 @@
 //
-//  MetalGeometry.hpp
+//  MetalGeometry.h
 //  metal-support
 //
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#ifndef MetalGeometry_hpp
-#define MetalGeometry_hpp
+#ifndef MetalGeometry_h
+#define MetalGeometry_h
 
 #include <simd/simd.h>
 
@@ -43,4 +43,4 @@ namespace xxd{
     simd_float4x4 MakeScale(const simd_float3& v);
 }
 
-#endif /* MetalGeometry_hpp */
+#endif /* MetalGeometry_h */

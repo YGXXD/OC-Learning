@@ -6,8 +6,8 @@
 //
 
 #import "RenderView.h"
-#include "MetalRender.hpp"
-#include "MetalCamera.hpp"
+#include "MetalRender.h"
+#include "MetalCamera.h"
 
 @interface RenderView () <MTKViewDelegate>
 {

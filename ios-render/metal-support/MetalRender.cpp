@@ -5,9 +5,9 @@
 //  Created by chenqiudu on 2023/7/18.
 //
 
-#include "MetalRender.hpp"
-#include "MetalContext.hpp"
-#include "MetalCamera.hpp"
+#include "MetalRender.h"
+#include "MetalContext.h"
+#include "MetalCamera.h"
 
 xxd::Renderer::Renderer(xxd::Camera* cam, CA::MetalLayer* layer) : renderCam(cam), surface(layer)
 {
