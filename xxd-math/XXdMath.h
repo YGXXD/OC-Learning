@@ -17,7 +17,7 @@
 
 #include <simd/simd.h>
 
-namespace XXd{
+namespace xxd{
     // 平方根倒数
     float InvSqrt(float x);
 

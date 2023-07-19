@@ -7,7 +7,7 @@
 
 #include "XXdMath.h"
 
-float XXd::InvSqrt(float x)
+float xxd::InvSqrt(float x)
 {
     uint32_t i;
     float a = x;
@@ -24,12 +24,12 @@ float XXd::InvSqrt(float x)
     return a;
 }
 
-simd_float3 XXd::Normalize(const simd_float3& v)
+simd_float3 xxd::Normalize(const simd_float3& v)
 {
-    return v * XXd::InvSqrt(simd_length_squared(v));
+    return v * xxd::InvSqrt(simd_length_squared(v));
 }
 
-simd_float4x4 XXd::MakeIdentity()
+simd_float4x4 xxd::MakeIdentity()
 {
     return (simd_float4x4){ (simd_float4){ 1.f, 0.f, 0.f, 0.f },
                              (simd_float4){ 0.f, 1.f, 0.f, 0.f },
@@ -37,7 +37,7 @@ simd_float4x4 XXd::MakeIdentity()
                              (simd_float4){ 0.f, 0.f, 0.f, 1.f } };
 }
 
-simd_float4x4 XXd::MakeViewLookAt(const simd_float3& eyePos, const simd_float3& focusPos, const simd_float3& up)
+simd_float4x4 xxd::MakeViewLookAt(const simd_float3& eyePos, const simd_float3& focusPos, const simd_float3& up)
 {
     simd_float3 z = Normalize(focusPos - eyePos);
     simd_float3 x = Normalize(simd_cross(up, z));
@@ -52,7 +52,7 @@ simd_float4x4 XXd::MakeViewLookAt(const simd_float3& eyePos, const simd_float3& 
                                  (simd_float4){ wx, wy, wz, 1.f });
 }
 
-simd_float4x4 XXd::MakePerspective(float fovRadians, float aspect, float znear, float zfar)
+simd_float4x4 xxd::MakePerspective(float fovRadians, float aspect, float znear, float zfar)
 {
     float ys = 1.f / tanf(fovRadians * 0.5f);
     float xs = ys / aspect;
@@ -63,7 +63,7 @@ simd_float4x4 XXd::MakePerspective(float fovRadians, float aspect, float znear, 
                                  (simd_float4){ 0, 0, znear * zs, 0.f });
 }
 
-simd_float4x4 XXd::MakeXRotate(float angleRadians)
+simd_float4x4 xxd::MakeXRotate(float angleRadians)
 {
     const float a = angleRadians;
     return simd_matrix_from_rows((simd_float4){ 1.0f, 0.0f, 0.0f, 0.0f },
@@ -72,7 +72,7 @@ simd_float4x4 XXd::MakeXRotate(float angleRadians)
                                  (simd_float4){ 0.0f, 0.0f, 0.0f, 1.0f });
 }
 
-simd_float4x4 XXd::MakeYRotate(float angleRadians)
+simd_float4x4 xxd::MakeYRotate(float angleRadians)
 {
     const float a = angleRadians;
     return simd_matrix_from_rows((simd_float4){ cosf( a ), 0.0f, -sinf( a ), 0.0f },
@@ -81,7 +81,7 @@ simd_float4x4 XXd::MakeYRotate(float angleRadians)
                                  (simd_float4){ 0.0f, 0.0f, 0.0f, 1.0f });
 }
 
-simd_float4x4 XXd::MakeZRotate(float angleRadians)
+simd_float4x4 xxd::MakeZRotate(float angleRadians)
 {
     const float a = angleRadians;
     return simd_matrix_from_rows((simd_float4){ cosf( a ), sinf( a ), 0.0f, 0.0f },
@@ -90,7 +90,7 @@ simd_float4x4 XXd::MakeZRotate(float angleRadians)
                                  (simd_float4){ 0.0f, 0.0f, 0.0f, 1.0f });
 }
 
-simd_float4x4 XXd::MakeTranslate(const simd_float3& v)
+simd_float4x4 xxd::MakeTranslate(const simd_float3& v)
 {
     return simd_matrix_from_rows((simd_float4){ 1.0f, 0.0f, 0.0f, 0.0f },
                                  (simd_float4){ 0.0f, 1.0f, 0.0f, 0.0f },
@@ -98,7 +98,7 @@ simd_float4x4 XXd::MakeTranslate(const simd_float3& v)
                                  (simd_float4){ v.x, v.y, v.z, 1.0f });
 }
 
-simd_float4x4 XXd::MakeScale(const simd_float3& v)
+simd_float4x4 xxd::MakeScale(const simd_float3& v)
 {
     return simd_matrix((simd_float4){ v.x, 0, 0, 0 },
                        (simd_float4){ 0, v.y, 0, 0 },
